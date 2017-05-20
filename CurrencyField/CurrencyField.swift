@@ -41,6 +41,13 @@ public class CurrencyField: UITextField {
         keyboardType = .decimalPad
     }
     
+    // Prevent the user from moving the cursor
+    override public func closestPosition(to point: CGPoint) -> UITextPosition? {
+        let beginning = self.beginningOfDocument
+        let end = self.position(from: beginning, offset: (self.text?.characters.count)!)
+        return end
+    }
+    
     
     
     // MARK: Helper Functions
