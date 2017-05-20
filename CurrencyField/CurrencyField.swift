@@ -10,6 +10,8 @@ import UIKit
 
 public class CurrencyField: UITextField {
     
+    public var value: Decimal?
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         keyboardType = .decimalPad
