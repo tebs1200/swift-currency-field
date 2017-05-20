@@ -21,6 +21,8 @@ public class CurrencyField: UITextField {
         }
     }
     
+    private var lastValidText: String? = nil
+    
     fileprivate lazy var currencyFormatter: NumberFormatter = {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .currency
@@ -34,11 +36,13 @@ public class CurrencyField: UITextField {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         keyboardType = .decimalPad
+        self.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     }
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
         keyboardType = .decimalPad
+        self.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
     }
     
     // Prevent the user from moving the cursor
@@ -48,6 +52,26 @@ public class CurrencyField: UITextField {
         return end
     }
     
+    func textDidChange() {
+        
+        if let currentText = self.text, currentText != "" {
+            
+            if currentText == NSLocale.current.currencySymbol {
+                internalValue = nil
+                lastValidText = currentText
+            } else {
+                if let parsedDecimalValue = parseCurrencyString(currentText) {
+                    internalValue = parsedDecimalValue
+                    lastValidText = currentText
+                } else {
+                    self.text = lastValidText
+                }
+            }
+        } else {
+            internalValue = nil
+            lastValidText = nil
+        }
+    }
     
     
     // MARK: Helper Functions
@@ -58,6 +82,17 @@ public class CurrencyField: UITextField {
         } else {
             self.text = nil
         }
+    }
+    
+    private func parseCurrencyString(_ currencyString: String) -> Decimal? {
+        
+        if let decimal = Decimal(string: currencyString) {
+            return decimal
+        } else if let number = currencyFormatter.number(from: currencyString) {
+            return number.decimalValue
+        }
+        
+        return nil
     }
     
 }
