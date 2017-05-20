@@ -22,4 +22,11 @@ class CurrencyFieldTests: XCTestCase {
         XCTAssertEqual(currencyField.text, "$10.00")
     }
     
+    func testClearingValueClearsText() {
+        let currencyField = CurrencyField()
+        currencyField.value = 10
+        currencyField.text = nil
+        XCTAssertEqual(currencyField.text, "")
+    }
+    
 }
