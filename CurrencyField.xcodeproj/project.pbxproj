@@ -10,6 +10,7 @@
 		96FD0F5D1ED051A10054FD2C /* CurrencyField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FD0F531ED051A10054FD2C /* CurrencyField.framework */; };
 		96FD0F621ED051A10054FD2C /* CurrencyFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD0F611ED051A10054FD2C /* CurrencyFieldTests.swift */; };
 		96FD0F641ED051A10054FD2C /* CurrencyField.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FD0F561ED051A10054FD2C /* CurrencyField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96FD0F6E1ED054A70054FD2C /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD0F6D1ED054A70054FD2C /* CurrencyField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		96FD0F5C1ED051A10054FD2C /* CurrencyFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FD0F611ED051A10054FD2C /* CurrencyFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFieldTests.swift; sourceTree = "<group>"; };
 		96FD0F631ED051A10054FD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96FD0F6D1ED054A70054FD2C /* CurrencyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				96FD0F561ED051A10054FD2C /* CurrencyField.h */,
 				96FD0F571ED051A10054FD2C /* Info.plist */,
+				96FD0F6D1ED054A70054FD2C /* CurrencyField.swift */,
 			);
 			path = CurrencyField;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					96FD0F521ED051A10054FD2C = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					96FD0F5B1ED051A10054FD2C = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FD0F6E1ED054A70054FD2C /* CurrencyField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		96FD0F681ED051A10054FD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noshjournal.CurrencyField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +347,7 @@
 		96FD0F691ED051A10054FD2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +366,7 @@
 		96FD0F6B1ED051A10054FD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CurrencyFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noshjournal.CurrencyFieldTests;
@@ -369,6 +378,7 @@
 		96FD0F6C1ED051A10054FD2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CurrencyFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noshjournal.CurrencyFieldTests;
@@ -396,6 +406,7 @@
 				96FD0F691ED051A10054FD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96FD0F6A1ED051A10054FD2C /* Build configuration list for PBXNativeTarget "CurrencyFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +415,7 @@
 				96FD0F6C1ED051A10054FD2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
