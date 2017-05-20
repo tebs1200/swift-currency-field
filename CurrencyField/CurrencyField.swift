@@ -8,6 +8,6 @@
 
 import UIKit
 
-class CurrencyField: UITextField {
+public class CurrencyField: UITextField {
     
 }
