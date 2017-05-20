@@ -10,4 +10,14 @@ import UIKit
 
 public class CurrencyField: UITextField {
     
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        keyboardType = .decimalPad
+    }
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        keyboardType = .decimalPad
+    }
+    
 }
