@@ -12,6 +12,8 @@
 		96FD0F641ED051A10054FD2C /* CurrencyField.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FD0F561ED051A10054FD2C /* CurrencyField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96FD0F6E1ED054A70054FD2C /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD0F6D1ED054A70054FD2C /* CurrencyField.swift */; };
 		96FD0F711ED1696E0054FD2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FD0F701ED1696E0054FD2C /* UIKit.framework */; };
+		96FD0F741ED16CDC0054FD2C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 96FD0F721ED16CDC0054FD2C /* README.md */; };
+		96FD0F751ED16CDC0054FD2C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 96FD0F731ED16CDC0054FD2C /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		96FD0F631ED051A10054FD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96FD0F6D1ED054A70054FD2C /* CurrencyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
 		96FD0F701ED1696E0054FD2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96FD0F721ED16CDC0054FD2C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96FD0F731ED16CDC0054FD2C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		96FD0F491ED051A10054FD2C = {
 			isa = PBXGroup;
 			children = (
+				96FD0F721ED16CDC0054FD2C /* README.md */,
+				96FD0F731ED16CDC0054FD2C /* LICENSE */,
 				96FD0F551ED051A10054FD2C /* CurrencyField */,
 				96FD0F601ED051A10054FD2C /* CurrencyFieldTests */,
 				96FD0F541ED051A10054FD2C /* Products */,
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FD0F751ED16CDC0054FD2C /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FD0F741ED16CDC0054FD2C /* README.md in Sources */,
 				96FD0F6E1ED054A70054FD2C /* CurrencyField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
