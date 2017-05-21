@@ -52,7 +52,7 @@ public class CurrencyField: UITextField {
         return end
     }
     
-    func textDidChange() {
+    public func textDidChange() {
         
         if let currentText = self.text, currentText != "" {
             
