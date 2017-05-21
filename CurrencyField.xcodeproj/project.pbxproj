@@ -11,6 +11,7 @@
 		96FD0F621ED051A10054FD2C /* CurrencyFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD0F611ED051A10054FD2C /* CurrencyFieldTests.swift */; };
 		96FD0F641ED051A10054FD2C /* CurrencyField.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FD0F561ED051A10054FD2C /* CurrencyField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96FD0F6E1ED054A70054FD2C /* CurrencyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD0F6D1ED054A70054FD2C /* CurrencyField.swift */; };
+		96FD0F711ED1696E0054FD2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FD0F701ED1696E0054FD2C /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		96FD0F611ED051A10054FD2C /* CurrencyFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFieldTests.swift; sourceTree = "<group>"; };
 		96FD0F631ED051A10054FD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96FD0F6D1ED054A70054FD2C /* CurrencyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyField.swift; sourceTree = "<group>"; };
+		96FD0F701ED1696E0054FD2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FD0F711ED1696E0054FD2C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 				96FD0F551ED051A10054FD2C /* CurrencyField */,
 				96FD0F601ED051A10054FD2C /* CurrencyFieldTests */,
 				96FD0F541ED051A10054FD2C /* Products */,
+				96FD0F6F1ED1696E0054FD2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +91,14 @@
 				96FD0F631ED051A10054FD2C /* Info.plist */,
 			);
 			path = CurrencyFieldTests;
+			sourceTree = "<group>";
+		};
+		96FD0F6F1ED1696E0054FD2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96FD0F701ED1696E0054FD2C /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
